@@ -42,9 +42,9 @@
         "ignoreUploadUnusedFiles": true
     },
     "compileType": "miniprogram",
-    "libVersion": "2.23.0",
+    "libVersion": "2.23.2",
     "appid": "wxf40a840a7ed53953",
-    "projectname": "hejitianqi",
+    "projectname": "hejiWeather",
     "debugOptions": {
         "hidedInDevtools": []
     },

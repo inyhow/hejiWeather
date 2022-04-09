@@ -4,10 +4,10 @@
 
 <view class="container">
   <view class="nowWeather">
-	<view class="location-wrap" bindtap="selectLocation">
-		<image class="icon" src="../../images/location.png"></image>
-		<view class="city w">{{district}} {{street}}</view>
-	</view>	
+    <view class="location-wrap" bindtap="selectLocation">
+      <image class="icon" src="../../images/location.png"></image>
+      <view class="city w">{{district}} {{street}}</view>
+    </view>
     <!--view class="road w">{{street}}</view>-->
     <view class="temp w b">{{tmpmax}}°</view>
     <view class="weather w">{{txt}} |
@@ -50,39 +50,39 @@
     </view>
   </view>
 
-<view class="threehor" wx:key="item" wx:for-items="{{daily_forecast}}" wx:for-index="i">
-  <view class="hor forcast">
-    <view class="day">{{day[i]}}</view>
-    <view class="hor">
-      <image class="img" src="/images/weather_icon_s1_color/{{item.iconDay}}.png"></image>
-      <view class="center">
-        <block wx:if="{{item.textDay == item.textNight}}">
-          <view class="daynight">{{item.textDay}}</view>
-        </block>
-        <block wx:else>
-          <view class="daynight">{{item.textDay}}转{{item.textNight}}</view>
-        </block>
+  <view class="threehor" wx:key="item" wx:for-items="{{daily_forecast}}" wx:for-index="i">
+    <view class="hor forcast">
+      <view class="day">{{day[i]}}</view>
+      <view class="hor">
+        <image class="img" src="/images/weather_icon_s1_color/{{item.iconDay}}.png"></image>
+        <view class="center">
+          <block wx:if="{{item.textDay == item.textNight}}">
+            <view class="daynight">{{item.textDay}}</view>
+          </block>
+          <block wx:else>
+            <view class="daynight">{{item.textDay}}转{{item.textNight}}</view>
+          </block>
+        </view>
       </view>
+      <view class="tmp">{{item.tempMin}}°/ {{item.tempMax}}°</view>
     </view>
-    <view class="tmp">{{item.tempMin}}°/ {{item.tempMax}}°</view>
   </view>
-</view>
 
-<view class="lifeIndex">
-  <view class='item' wx:for='{{lifestyle}}' wx:key='index'>
-    <view class='item'>
-      <image class='icon' src='/images/lifestyle/lifestyle_{{item.type}}.png'></image>
-      <view class='right'>
-        <view class='key'>{{item.name}} {{item.category}}</view>
-        <view class='value'>{{item.text}}
+  <view class="lifeIndex">
+    <view class='item' wx:for='{{lifestyle}}' wx:key='index'>
+      <view class='item'>
+        <image class='icon' src='/images/lifestyle/lifestyle_{{item.type}}.png'></image>
+        <view class='right'>
+          <view class='key'>{{item.name}} {{item.category}}</view>
+          <view class='value'>{{item.text}}
 
+          </view>
         </view>
       </view>
     </view>
   </view>
-</view>
 
-<!--button open-type='feedback'>意见反馈</button>
+  <!--button open-type='feedback'>意见反馈</button>
 <button open-type="contact" bindcontact="handleContact">联系我们</button>
 <view class='notice-wrap' hidden='{{hideNotice}}'>
 　　<view class='tongzhitext'>

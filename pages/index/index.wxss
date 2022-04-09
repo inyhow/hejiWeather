@@ -15,7 +15,8 @@
   text-align: center;
   margin: auto 0;
   width: 100%;
-  margin-left: 25rpx;		
+  margin-left: 25rpx;
+  
 }
 .cgreen{padding: 0 6px;border-radius: 0.2rem;background-color:#82c91e;}
 .cyellow{padding: 0 6px;border-radius: 0.2rem;background-color:#ecc544;}
@@ -48,8 +49,7 @@
 }
  
 /**index css**/
- 
- 
+
 .bg {
   position: fixed;
   width: 100%;
@@ -60,7 +60,7 @@
   left: 0;
   z-index:-1;
 }
- 
+
 .temp{font-size: 185rpx;}
  
 .container {
@@ -102,15 +102,14 @@
   flex-direction: row;
   justify-content: space-around;
   bottom: 50rpx;
-  background-color:#000;
-  opacity:0.3;
+  /*背景半透明，内容不透明*/
+  background: rgb(0,0,0,0.5); 
 }
 .forcast{
   padding: 30rpx;
   margin-left: 16rpx;
   margin-right: 16rpx;
   border-bottom: 1rpx solid #eee;
-
 }
 
 
