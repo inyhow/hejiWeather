@@ -1,7 +1,38 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+	  "pages/tool/tool",
+    "templates/profile/pages/profile"
   ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "天气预报",
+      "iconPath":"/images/bar/index.jpg",
+      "selectedIconPath":"/images/bar/index-hover.jpg"
+    }, {
+      "pagePath": "pages/tool/tool",
+      "text": "实用工具",
+      "iconPath":"/images/bar/order.jpg",
+      "selectedIconPath":"/images/bar/order-hover.jpg"
+    }, {
+      "pagePath": "templates/profile/pages/profile",
+      "text": "我的",
+      "iconPath":"/images/bar/me.jpg",
+      "selectedIconPath":"/images/bar/me-hover.jpg"
+    }]
+  },
+  "subpackages": [{
+    "root": "templates/danmu",
+    "pages": [
+      "pages/danmu"
+    ]
+  }],
+
   "permission": {
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序定位"

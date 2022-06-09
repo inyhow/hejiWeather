@@ -2,6 +2,7 @@
 const util = require('../../utils/utils.js');
 var app = getApp()
 var day = ["今天", "明天", "后天"];
+var locdata;
 Page({
   data: {
     //init data	
@@ -34,6 +35,7 @@ Page({
         });
       },
       fail: function (e) {
+		 
         //这边判断缓存
         wx.getStorage({
           key: 'locdata',
